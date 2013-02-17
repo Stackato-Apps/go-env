@@ -1,0 +1,3 @@
+name: env
+mem: 32M
+ignores: [.git, bin]

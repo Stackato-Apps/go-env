@@ -1,1 +1,1 @@
-web: bin/env
+web: bin/go-env
