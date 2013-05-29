@@ -1,3 +1,7 @@
 name: env
 mem: 128M
+env:
+  STACKATO_CRON_INSTANCES: all
+cron:
+  - "* * * * * /usr/sbin/logrotate /app/app/app-logrotate.conf"
 ignores: [.git, bin]
