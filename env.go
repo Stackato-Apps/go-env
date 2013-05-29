@@ -9,6 +9,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, req *http.Request) {
+	fmt.Printf("%+v\n", req)
 	fmt.Fprintln(w, strings.Join(os.Environ(), "\n"))
 }
 
