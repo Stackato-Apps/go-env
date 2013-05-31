@@ -3,5 +3,5 @@ mem: 128M
 env:
   STACKATO_CRON_INSTANCES: all
 cron:
-  - "* * * * * /usr/sbin/logrotate /app/app/app-logrotate.conf"
+  - "* * * * * bash -c '/usr/sbin/logrotate -v /app/app/app-logrotate.conf >> /app/logs/stderr.log 2>&1'"
 ignores: [.git, bin]
