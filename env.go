@@ -18,5 +18,7 @@ func handler(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
+	addr := ":" + os.Getenv("PORT")
+	fmt.Printf("Listening on %v\n", addr)
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
