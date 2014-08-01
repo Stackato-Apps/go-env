@@ -1,5 +1,0 @@
-name: go-env
-mem: 128M
-env:
-  GOVERSION: 1.2
-ignores: [.git, bin]
