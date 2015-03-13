@@ -1,6 +1,6 @@
 applications:
 - name: go-env
-  mem: 128M
+  mem: 32M
   stackato:
     env:
       GOVERSION:
