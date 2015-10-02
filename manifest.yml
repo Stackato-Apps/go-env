@@ -1,5 +1,6 @@
 applications:
 - name: go-env
+  buildpack: https://github.com/cloudfoundry/go-buildpack
   mem: 32M
   stackato:
     env:
