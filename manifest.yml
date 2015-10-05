@@ -2,6 +2,7 @@ applications:
 - name: go-env
   buildpack: https://github.com/cloudfoundry/go-buildpack
   mem: 32M
+  stack: cflinuxfs2
   stackato:
     env:
       GOVERSION:
