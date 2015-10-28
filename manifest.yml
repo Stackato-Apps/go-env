@@ -1,10 +1,11 @@
 applications:
 - name: go-env
+  buildpack: https://github.com/cloudfoundry/go-buildpack#v1.3.1
   mem: 32M
   stackato:
     env:
       GOVERSION:
-        default: 1.2
+        default: 1.4.2
     ignores:
     - .git
     - bin
