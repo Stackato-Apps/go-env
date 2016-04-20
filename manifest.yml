@@ -1,6 +1,7 @@
 applications:
 - name: go-env
   buildpack: https://github.com/cloudfoundry/go-buildpack#v1.7.2
+  disk_quota: 10M
   env:
     GOVERSION: 1.7.2
   memory: 32M
